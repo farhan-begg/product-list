@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import data, { allCategories, categoriesUnique, productCount } from './data.js';
 import Product from './Products'
@@ -6,20 +6,18 @@ import ProductNcp from './ProductNcp'
 import ProductClass from './ProductClass';
 
 
-console.log(allCategories)
-
 function App() {
+
+  const [category, setCategory] = useState('All');
+
   return (
-
     <div className="App">
-      <p>Product Count: {productCount.length}</p>
-      <p>Category: {}</p>
-      {/* <Product />
-      <ProductNcp /> */}
-      <ProductClass />
-
-
+      <h1>{category}</h1>
+      <Product category={category} setCategory={setCategory} />
+      <ProductNcp category={category} />
+      {/* <ProductClass /> */}
     </div >
+
   );
 }
 export default App;

@@ -15,7 +15,7 @@ export default function ProductNcp(props) {
 
     }).map((item, index) => {
         return (
-            <div key={index}>
+            <div classname="cat" key={index}>
 
                 <h1>{item.name}</h1>
                 <h3>{item.price}</h3>

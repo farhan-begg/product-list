@@ -5,7 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+
+  background-color: #ffa69e;
+background-image: linear-gradient(315deg, #ffa69e 0%, #5d4954 74%);
+
   color: white;
 }
 
@@ -19,9 +22,4 @@ button {
   margin: 2px;
 
 }
- .display-item{
-  display: grid;
-  grid-column-gap: 5px;
-}
-
-
+ 

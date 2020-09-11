@@ -1,5 +1,6 @@
 import React from 'react'
 import data from './data.js';
+import './ProductNcp.css';
 
 
 export default function ProductNcp(props) {
@@ -15,11 +16,16 @@ export default function ProductNcp(props) {
 
     }).map((item, index) => {
         return (
-            <div classname="cat" key={index}>
 
-                <h1>{item.name}</h1>
-                <h3>{item.price}</h3>
-                <h4>{item.category}</h4>
+
+
+            <div classname="test" key={index}>
+                <ul id="cat">
+
+                    <li><h1>{item.name}</h1></li>
+                    <li><h3>{item.price}</h3></li>
+                    <li><h4>{item.category}</h4></li>
+                </ul>
             </div>
         )
     })

@@ -3,7 +3,7 @@ import './App.css';
 import data, { allCategories, categoriesUnique, productCount } from './data.js';
 import Product from './Products'
 import ProductNcp from './ProductNcp'
-import ProductClass from './ProductClass';
+
 
 
 function App() {
